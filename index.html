@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syahrial Ramadhan — Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <i class="fab fa-linkedin"></i>
+                <span>DevPorto</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about"><i class="fas fa-user"></i> Tentang</a>
+                <a href="#experience"><i class="fas fa-briefcase"></i> Pengalaman</a>
+                <a href="#projects"><i class="fas fa-code"></i> Proyek</a>
+                <a href="https://wa.me/6282337355051" target="_blank" class="nav-cta"><i class="fab fa-whatsapp"></i> Hubungi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-wrap">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <!-- Profile Card -->
+            <div class="card">
+                <div class="profile-banner"></div>
+                <div class="profile-body">
+                    <div class="avatar-wrap">
+                        <!--
+                            CARA PASANG FOTO LOKAL:
+                            1. Letakkan file foto kamu (misal: foto.jpg) di folder yang sama dengan index.html
+                            2. Ganti src di bawah ini menjadi nama file foto kamu, contoh: src="foto.jpg"
+                        -->
+                        <img src="foto-profil.jpg"
+                             onerror="this.src='https://ui-avatars.com/api/?name=Syahrial+Ramadhan&size=150&background=0a66c2&color=fff&bold=true'"
+                             alt="Syahrial Ramadhan"
+                             class="avatar-img"
+                             id="profile-img">
+                        <span class="online-dot"></span>
+                    </div>
+                    <div class="profile-name" id="user-name">Memuat...</div>
+                    <div class="profile-headline" id="user-headline">Memuat...</div>
+                    <div class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Aceh, Indonesia</span>
+                    </div>
+                    <div class="profile-location" style="margin-top:4px">
+                        <i class="fas fa-university"></i>
+                        <span>Universitas Jabal Ghafur</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="profile-stat">
+                        <span>Koneksi profil</span>
+                        <b>142</b>
+                    </div>
+                    <div class="profile-stat">
+                        <span>Proyek selesai</span>
+                        <b>4+</b>
+                    </div>
+                    <div class="profile-stat">
+                        <span>Sertifikat</span>
+                        <b>2</b>
+                    </div>
+                    <a href="https://wa.me/6282337355051" target="_blank" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i> Hubungi Saya
+                    </a>
+                    <a href="#" class="btn-secondary">Unduh CV</a>
+                </div>
+            </div>
+
+            <!-- Skills Card -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="sidebar-title">Keterampilan</div>
+                    <div class="tags-wrap" id="skills-list"></div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- MAIN FEED -->
+        <main class="feed">
+
+            <!-- About -->
+            <section class="card reveal" id="about">
+                <div class="card-body">
+                    <h2 class="card-heading"><i class="fas fa-user-circle"></i> Tentang Saya</h2>
+                    <p class="about-text" id="about-text">Memuat...</p>
+                </div>
+            </section>
+
+            <!-- Skills Progress -->
+            <section class="card reveal">
+                <div class="card-body">
+                    <h2 class="card-heading"><i class="fas fa-chart-bar"></i> Tingkat Keahlian</h2>
+                    <div id="skill-bars"></div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="card reveal" id="experience">
+                <div class="card-body">
+                    <h2 class="card-heading"><i class="fas fa-briefcase"></i> Pengalaman</h2>
+                    <div id="experience-list"></div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="card reveal">
+                <div class="card-body">
+                    <h2 class="card-heading"><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
+                    <div id="education-list"></div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="card reveal" id="projects">
+                <div class="card-body">
+                    <h2 class="card-heading"><i class="fas fa-laptop-code"></i> Proyek Pilihan</h2>
+                    <div class="projects-grid" id="projects-grid"></div>
+                </div>
+            </section>
+
+            <!-- Certificates -->
+            <section class="card reveal">
+                <div class="card-body">
+                    <h2 class="card-heading"><i class="fas fa-certificate"></i> Sertifikat & Pencapaian</h2>
+                    <div id="certificates-list"></div>
+                </div>
+            </section>
+
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal" id="contact">
+                <div class="footer-inner">
+                    <div class="footer-heading">Mari Berkolaborasi! 🚀</div>
+                    <div class="footer-sub">Punya proyek atau ide menarik? Saya siap membantu mewujudkannya.</div>
+                    <a href="https://wa.me/6282337355051" target="_blank" class="btn-white">
+                        <i class="fab fa-whatsapp"></i> Kirim Pesan via WhatsApp
+                    </a>
+                    <div class="footer-socials">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6282337355051" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copy">© 2024 Syahrial Ramadhan · Dibuat dengan ❤️</div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

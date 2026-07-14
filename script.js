@@ -64,7 +64,7 @@ const userData = {
             icon: "fas fa-store",
             link: "https://syahrial755.github.io/umkm/",
             preview: "umkm"
-        }
+        },
         {
             name: "Edukasi Kesehatan AI 🩺",
             tech: "HTML · CSS · JS · AI API",

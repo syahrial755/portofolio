@@ -65,6 +65,14 @@ const userData = {
             link: "https://syahrial755.github.io/umkm/",
             preview: "umkm"
         }
+        {
+            name: "Edukasi Kesehatan AI 🩺",
+            tech: "HTML · CSS · JS · AI API",
+            desc: "Aplikasi edukasi kesehatan cerdas yang memanfaatkan teknologi Kecerdasan Buatan (AI) untuk memberikan informasi medis interaktif, analisis kesehatan ringan, dan edukasi hidup sehat.",
+            icon: "fas fa-stethoscope",
+            link: "https://websaya.mkz.my.id/",
+            preview: "Edukasi Kesehatan AI"
+        }
     ],
 
     certificates: [
